@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Settings">
+            <connections>
+                <outlet property="btnSound" destination="yKy-95-x6S" id="hxq-HN-MAO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUIZI APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omX-4V-5IL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="L4o-YU-WoV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pi-JO-zTS">
+                    <rect key="frame" x="1" y="1" width="60" height="64"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBackToHomeTapped:" destination="-1" eventType="touchUpInside" id="ydD-sZ-16q"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_arrow_icon_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="j6S-Ju-X84">
+                    <rect key="frame" x="15" y="21" width="24" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="ChN-cF-ziE"/>
+                        <constraint firstAttribute="width" secondItem="j6S-Ju-X84" secondAttribute="height" multiplier="12:11" id="rD4-SN-cEj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-cE-Xol">
+                    <rect key="frame" x="99" y="108" width="125" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4aD-cE-Xol" secondAttribute="height" multiplier="51:16" constant="23" id="5IO-qx-oAW"/>
+                        <constraint firstAttribute="width" constant="125" id="XND-kx-zh1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7c-m0-KSo">
+                    <rect key="frame" x="19" y="202" width="78" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="k7c-m0-KSo" secondAttribute="height" multiplier="78:31" id="WfN-za-VF6"/>
+                        <constraint firstAttribute="width" constant="78" id="mHU-fT-LXq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    </variation>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKy-95-x6S">
+                    <rect key="frame" x="238" y="202" width="51" height="31"/>
+                    <connections>
+                        <action selector="Sound:" destination="-1" eventType="valueChanged" id="i6k-gt-L5f"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Reset Game,click on Reset Games" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUU-gL-N1F">
+                    <rect key="frame" x="11" y="365" width="298" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="298" id="hYE-Ih-BNh"/>
+                        <constraint firstAttribute="width" secondItem="fUU-gL-N1F" secondAttribute="height" multiplier="298:57" id="wJJ-Ft-DVf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2a-TP-iT1">
+                    <rect key="frame" x="66" y="294" width="188" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="188" id="p07-Kb-IUT"/>
+                        <constraint firstAttribute="width" secondItem="z2a-TP-iT1" secondAttribute="height" multiplier="65:17" constant="58" id="phU-fX-S1L"/>
+                    </constraints>
+                    <state key="normal" title="Reset Games">
+                        <color key="titleColor" red="0.22835528150000001" green="0.2257253186" blue="0.22899438529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    </variation>
+                    <connections>
+                        <action selector="btnResetSettingsTapped:" destination="-1" eventType="touchUpInside" id="whw-yu-wmd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.86986526035239276" green="0.90570442119155359" blue="0.93801440593719676" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4aD-cE-Xol" firstAttribute="top" secondItem="omX-4V-5IL" secondAttribute="bottom" constant="44" id="9zF-YN-MPw">
+                    <variation key="heightClass=regular-widthClass=regular" constant="145"/>
+                </constraint>
+                <constraint firstItem="z2a-TP-iT1" firstAttribute="centerX" secondItem="fUU-gL-N1F" secondAttribute="centerX" id="AIJ-wF-rzP"/>
+                <constraint firstItem="omX-4V-5IL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ELM-DI-2ck"/>
+                <constraint firstItem="4aD-cE-Xol" firstAttribute="centerX" secondItem="omX-4V-5IL" secondAttribute="centerX" constant="1.5" id="IML-cZ-GGV"/>
+                <constraint firstAttribute="centerY" secondItem="z2a-TP-iT1" secondAttribute="centerY" constant="-27" id="JUh-zE-u2J"/>
+                <constraint firstItem="omX-4V-5IL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JkP-Sh-Qjk"/>
+                <constraint firstItem="j6S-Ju-X84" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="MTn-2B-pgb"/>
+                <constraint firstItem="j6S-Ju-X84" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="NI0-W5-ldC"/>
+                <constraint firstItem="yKy-95-x6S" firstAttribute="centerX" secondItem="4aD-cE-Xol" secondAttribute="centerX" constant="101" id="PgI-Wi-iea">
+                    <variation key="heightClass=regular-widthClass=regular" constant="229"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="z2a-TP-iT1" secondAttribute="centerX" id="UGS-Lh-Fs7"/>
+                <constraint firstAttribute="trailing" secondItem="omX-4V-5IL" secondAttribute="trailing" id="WCf-NP-MEX"/>
+                <constraint firstItem="yKy-95-x6S" firstAttribute="top" secondItem="4aD-cE-Xol" secondAttribute="bottom" constant="62" id="WUE-Bl-M1h"/>
+                <constraint firstItem="fUU-gL-N1F" firstAttribute="top" secondItem="z2a-TP-iT1" secondAttribute="bottom" constant="37" id="nDa-TK-MWB">
+                    <variation key="heightClass=regular-widthClass=regular" constant="151"/>
+                </constraint>
+                <constraint firstItem="k7c-m0-KSo" firstAttribute="top" secondItem="4aD-cE-Xol" secondAttribute="bottom" constant="62" id="nvT-3S-hho">
+                    <variation key="heightClass=regular-widthClass=regular" constant="62"/>
+                </constraint>
+                <constraint firstItem="k7c-m0-KSo" firstAttribute="centerX" secondItem="4aD-cE-Xol" secondAttribute="centerX" constant="-103.5" id="yZs-BK-Ocf">
+                    <variation key="heightClass=regular-widthClass=regular" constant="-207.5"/>
+                </constraint>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="618" y="-54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_arrow_icon_black.png" width="47" height="44"/>
+    </resources>
+</document>

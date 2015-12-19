@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28E6546C1C23BF930074007F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E6546A1C23BF930074007F /* libsqlite3.0.dylib */; };
+		28E6546D1C23BF930074007F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E6546B1C23BF930074007F /* libsqlite3.dylib */; };
+		9DE7766C1C0C857800001FC2 /* Leelawadee Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DE7766B1C0C857800001FC2 /* Leelawadee Bold.ttf */; };
+		9DE7766E1C0C863B00001FC2 /* leelawad.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DE7766D1C0C863B00001FC2 /* leelawad.ttf */; };
+		AD65ABCD1BA969DD006A579E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65ABCC1BA969DD006A579E /* main.m */; };
+		AD65ABD01BA969DD006A579E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65ABCF1BA969DD006A579E /* AppDelegate.m */; };
+		AD65ABD31BA969DD006A579E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65ABD21BA969DD006A579E /* ViewController.m */; };
+		AD65ABD61BA969DD006A579E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD65ABD41BA969DD006A579E /* Main.storyboard */; };
+		AD65ABD81BA969DD006A579E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD65ABD71BA969DD006A579E /* Images.xcassets */; };
+		AD65ABDB1BA969DD006A579E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD65ABD91BA969DD006A579E /* LaunchScreen.xib */; };
+		AD65ABF31BA96C52006A579E /* Play.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65ABF11BA96C52006A579E /* Play.m */; };
+		AD65ABF41BA96C52006A579E /* Play.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD65ABF21BA96C52006A579E /* Play.xib */; };
+		AD65ABF81BA96C7E006A579E /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65ABF61BA96C7E006A579E /* Settings.m */; };
+		AD65ABF91BA96C7E006A579E /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD65ABF71BA96C7E006A579E /* Settings.xib */; };
+		AD65AC021BA96CA8006A579E /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65AC001BA96CA8006A579E /* About.m */; };
+		AD65AC031BA96CA8006A579E /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD65AC011BA96CA8006A579E /* About.xib */; };
+		AD7C5C4B1BB515A6004387DC /* launchImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD7C5C4A1BB515A6004387DC /* launchImage.jpg */; };
+		AD7C5C551BB56C11004387DC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7C5C541BB56C11004387DC /* AVFoundation.framework */; };
+		ADB765111BAFCEC9000019AC /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7650F1BAFCEC9000019AC /* CustomCell.m */; };
+		ADB765121BAFCEC9000019AC /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB765101BAFCEC9000019AC /* CustomCell.xib */; };
+		ADC51EDE1BF0748400269853 /* Quiz App Categ Sample.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC51EDD1BF0748400269853 /* Quiz App Categ Sample.png */; };
+		ADC51EE41BF0749200269853 /* arrow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC51EDF1BF0749200269853 /* arrow_icon.png */; };
+		ADC51EE51BF0749200269853 /* back_arrow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC51EE01BF0749200269853 /* back_arrow_icon.png */; };
+		ADC51EE71BF0749200269853 /* rest_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC51EE21BF0749200269853 /* rest_icon.png */; };
+		ADC51EE81BF0749200269853 /* tag_text.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC51EE31BF0749200269853 /* tag_text.png */; };
+		ADDA5FCC1BF19E6300D9606C /* 02 About Us  Sample.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDA5FCB1BF19E6300D9606C /* 02 About Us  Sample.png */; };
+		ADDA5FCE1BF19E7500D9606C /* back_arrow_icon_black.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDA5FCD1BF19E7500D9606C /* back_arrow_icon_black.png */; };
+		ADDA5FD01BF19E7C00D9606C /* about_us_main.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDA5FCF1BF19E7C00D9606C /* about_us_main.png */; };
+		ADDA5FD21BF19ECD00D9606C /* level_hint_number.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDA5FD11BF19ECD00D9606C /* level_hint_number.png */; };
+		ADDA5FD41BF19ED200D9606C /* level_hint_text_field.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDA5FD31BF19ED200D9606C /* level_hint_text_field.png */; };
+		ADDA5FD81BF1B6AA00D9606C /* plc.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDA5FD71BF1B6AA00D9606C /* plc.png */; };
+		ADDA5FDA1BF1B6B800D9606C /* abt.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDA5FD91BF1B6B800D9606C /* abt.png */; };
+		ADDA5FDC1BF1B6CB00D9606C /* set.png in Resources */ = {isa = PBXBuildFile; fileRef = ADDA5FDB1BF1B6CB00D9606C /* set.png */; };
+		ADDD71421BB2CBBF0007CDBE /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD71411BB2CBBF0007CDBE /* Level1.m */; };
+		ADDD71461BB2CEEF0007CDBE /* StartQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD71441BB2CEEF0007CDBE /* StartQuiz.m */; };
+		ADDD71471BB2CEEF0007CDBE /* StartQuiz.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDD71451BB2CEEF0007CDBE /* StartQuiz.xib */; };
+		ADDFF6801BB91F3F00400FA6 /* HighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDFF67E1BB91F3F00400FA6 /* HighScore.m */; };
+		ADDFF6811BB91F3F00400FA6 /* HighScore.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDFF67F1BB91F3F00400FA6 /* HighScore.xib */; };
+		ADE60C6A1BF9FE8A00482127 /* main_quizi.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE60C691BF9FE8900482127 /* main_quizi.png */; };
+		ADE60C701BFA040C00482127 /* Score Sample.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE60C6B1BFA040C00482127 /* Score Sample.png */; };
+		ADE60C711BFA040C00482127 /* score_done_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE60C6C1BFA040C00482127 /* score_done_btn.png */; };
+		ADE60C721BFA040C00482127 /* score_fail_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE60C6D1BFA040C00482127 /* score_fail_icon.png */; };
+		ADE60C731BFA040C00482127 /* score_pass_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE60C6E1BFA040C00482127 /* score_pass_icon.png */; };
+		ADE60C741BFA040C00482127 /* score_share_fb.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE60C6F1BFA040C00482127 /* score_share_fb.png */; };
+		ADE9697B1BC8C90B00149E49 /* Curve_2 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADE9697A1BC8C90B00149E49 /* Curve_2 (1).jpg */; };
+		ADE9697D1BC8CB5100149E49 /* mtaVFni.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADE9697C1BC8CB5100149E49 /* mtaVFni.jpg */; };
+		ADE9697F1BC8CCDD00149E49 /* 2dyXkPj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADE9697E1BC8CCDD00149E49 /* 2dyXkPj.jpg */; };
+		ADE969811BC8D1E700149E49 /* settttt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADE969801BC8D1E700149E49 /* settttt.jpg */; };
+		ADE969861BC8E5C200149E49 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE969851BC8E5C200149E49 /* CircleProgressBar.m */; };
+		ADE969CD1BC95D5800149E49 /* mjaPVtY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADE969CC1BC95D5800149E49 /* mjaPVtY.jpg */; };
+		DB4E26301C0F1F9600ECA3C9 /* start_iphone5s.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4E262F1C0F1F9600ECA3C9 /* start_iphone5s.xib */; };
+		DB4E26321C0F218D00ECA3C9 /* start_iphone6.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4E26311C0F218D00ECA3C9 /* start_iphone6.xib */; };
+		DB75658F1C119FCB0033CA9D /* cricket_main_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB75658E1C119FCB0033CA9D /* cricket_main_icon.png */; };
+		DB7565911C11AB970033CA9D /* Cricket  Quiz app.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = DB7565901C11AB970033CA9D /* Cricket  Quiz app.sqlite */; };
+		DB7565931C11B93B0033CA9D /* cricket_main_play_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7565921C11B93B0033CA9D /* cricket_main_play_btn.png */; };
+		DBAF1EE91C08770C006BC042 /* ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBAF1EE81C08770C006BC042 /* ring.mp3 */; };
+		DBAF1EEB1C087AA7006BC042 /* football_main_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DBAF1EEA1C087AA7006BC042 /* football_main_icon.png */; };
+		DBAF1EED1C087AEB006BC042 /* football_main_play_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = DBAF1EEC1C087AEB006BC042 /* football_main_play_btn.png */; };
+		DBAF1EEF1C0881C2006BC042 /* football_lock_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DBAF1EEE1C0881C2006BC042 /* football_lock_icon.png */; };
+		DBAF1EF11C0881CC006BC042 /* football_unlock_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DBAF1EF01C0881CC006BC042 /* football_unlock_icon.png */; };
+		DBD765391C0D6BC700F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBD765381C0D6BC700F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Light.otf */; };
+		DBD7653B1C0D6C2500F2BEA0 /* Mark Simonson - Proxima Nova Alt Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBD7653A1C0D6C2500F2BEA0 /* Mark Simonson - Proxima Nova Alt Light.otf */; };
+		DBD7653D1C0D6CA800F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBD7653C1C0D6CA800F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Bold.otf */; };
+		DBDD5CE01C1002FF008A1687 /* start_ipnone6plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBDD5CDF1C1002FF008A1687 /* start_ipnone6plus.xib */; };
+		DBE35A7D1C1ADB7600717248 /* start_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE35A7C1C1ADB7600717248 /* start_ipad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28E6546A1C23BF930074007F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		28E6546B1C23BF930074007F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9DE7766B1C0C857800001FC2 /* Leelawadee Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Leelawadee Bold.ttf"; sourceTree = "<group>"; };
+		9DE7766D1C0C863B00001FC2 /* leelawad.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = leelawad.ttf; sourceTree = "<group>"; };
+		AD65ABC71BA969DC006A579E /* Cricket Quizi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricket Quizi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD65ABCB1BA969DC006A579E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD65ABCC1BA969DD006A579E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD65ABCE1BA969DD006A579E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD65ABCF1BA969DD006A579E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD65ABD11BA969DD006A579E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD65ABD21BA969DD006A579E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD65ABD51BA969DD006A579E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD65ABD71BA969DD006A579E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD65ABDA1BA969DD006A579E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AD65ABE51BA969DD006A579E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD65ABE61BA969DD006A579E /* Final_Quiz_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Final_Quiz_AppTests.m; sourceTree = "<group>"; };
+		AD65ABF01BA96C52006A579E /* Play.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Play.h; sourceTree = "<group>"; };
+		AD65ABF11BA96C52006A579E /* Play.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Play.m; sourceTree = "<group>"; };
+		AD65ABF21BA96C52006A579E /* Play.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Play.xib; sourceTree = "<group>"; };
+		AD65ABF51BA96C7E006A579E /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		AD65ABF61BA96C7E006A579E /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		AD65ABF71BA96C7E006A579E /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
+		AD65ABFF1BA96CA8006A579E /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
+		AD65AC001BA96CA8006A579E /* About.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = About.m; sourceTree = "<group>"; };
+		AD65AC011BA96CA8006A579E /* About.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
+		AD7C5C4A1BB515A6004387DC /* launchImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchImage.jpg; sourceTree = "<group>"; };
+		AD7C5C541BB56C11004387DC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		ADB7650E1BAFCEC9000019AC /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		ADB7650F1BAFCEC9000019AC /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		ADB765101BAFCEC9000019AC /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		ADC51EDD1BF0748400269853 /* Quiz App Categ Sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Quiz App Categ Sample.png"; path = "Final Quiz App/Quiz App Categ Sample.png"; sourceTree = "<group>"; };
+		ADC51EDF1BF0749200269853 /* arrow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_icon.png; path = "Final Quiz App/arrow_icon.png"; sourceTree = "<group>"; };
+		ADC51EE01BF0749200269853 /* back_arrow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back_arrow_icon.png; path = "Final Quiz App/back_arrow_icon.png"; sourceTree = "<group>"; };
+		ADC51EE21BF0749200269853 /* rest_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rest_icon.png; path = "Final Quiz App/rest_icon.png"; sourceTree = "<group>"; };
+		ADC51EE31BF0749200269853 /* tag_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tag_text.png; path = "Final Quiz App/tag_text.png"; sourceTree = "<group>"; };
+		ADDA5FCB1BF19E6300D9606C /* 02 About Us  Sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02 About Us  Sample.png"; sourceTree = "<group>"; };
+		ADDA5FCD1BF19E7500D9606C /* back_arrow_icon_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_arrow_icon_black.png; sourceTree = "<group>"; };
+		ADDA5FCF1BF19E7C00D9606C /* about_us_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_us_main.png; sourceTree = "<group>"; };
+		ADDA5FD11BF19ECD00D9606C /* level_hint_number.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level_hint_number.png; sourceTree = "<group>"; };
+		ADDA5FD31BF19ED200D9606C /* level_hint_text_field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level_hint_text_field.png; sourceTree = "<group>"; };
+		ADDA5FD71BF1B6AA00D9606C /* plc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plc.png; sourceTree = "<group>"; };
+		ADDA5FD91BF1B6B800D9606C /* abt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abt.png; sourceTree = "<group>"; };
+		ADDA5FDB1BF1B6CB00D9606C /* set.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = set.png; sourceTree = "<group>"; };
+		ADDD71401BB2CBBF0007CDBE /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
+		ADDD71411BB2CBBF0007CDBE /* Level1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level1.m; sourceTree = "<group>"; };
+		ADDD71431BB2CEEF0007CDBE /* StartQuiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartQuiz.h; sourceTree = "<group>"; };
+		ADDD71441BB2CEEF0007CDBE /* StartQuiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartQuiz.m; sourceTree = "<group>"; };
+		ADDD71451BB2CEEF0007CDBE /* StartQuiz.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartQuiz.xib; sourceTree = "<group>"; };
+		ADDFF67D1BB91F3F00400FA6 /* HighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScore.h; sourceTree = "<group>"; };
+		ADDFF67E1BB91F3F00400FA6 /* HighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScore.m; sourceTree = "<group>"; };
+		ADDFF67F1BB91F3F00400FA6 /* HighScore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HighScore.xib; sourceTree = "<group>"; };
+		ADE60C691BF9FE8900482127 /* main_quizi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_quizi.png; sourceTree = "<group>"; };
+		ADE60C6B1BFA040C00482127 /* Score Sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Score Sample.png"; sourceTree = "<group>"; };
+		ADE60C6C1BFA040C00482127 /* score_done_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score_done_btn.png; sourceTree = "<group>"; };
+		ADE60C6D1BFA040C00482127 /* score_fail_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score_fail_icon.png; sourceTree = "<group>"; };
+		ADE60C6E1BFA040C00482127 /* score_pass_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score_pass_icon.png; sourceTree = "<group>"; };
+		ADE60C6F1BFA040C00482127 /* score_share_fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score_share_fb.png; sourceTree = "<group>"; };
+		ADE9697A1BC8C90B00149E49 /* Curve_2 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Curve_2 (1).jpg"; sourceTree = "<group>"; };
+		ADE9697C1BC8CB5100149E49 /* mtaVFni.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mtaVFni.jpg; sourceTree = "<group>"; };
+		ADE9697E1BC8CCDD00149E49 /* 2dyXkPj.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2dyXkPj.jpg; sourceTree = "<group>"; };
+		ADE969801BC8D1E700149E49 /* settttt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = settttt.jpg; sourceTree = "<group>"; };
+		ADE969841BC8E5C200149E49 /* CircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressBar.h; sourceTree = "<group>"; };
+		ADE969851BC8E5C200149E49 /* CircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressBar.m; sourceTree = "<group>"; };
+		ADE969CC1BC95D5800149E49 /* mjaPVtY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mjaPVtY.jpg; sourceTree = "<group>"; };
+		DB4E262F1C0F1F9600ECA3C9 /* start_iphone5s.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = start_iphone5s.xib; sourceTree = "<group>"; };
+		DB4E26311C0F218D00ECA3C9 /* start_iphone6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = start_iphone6.xib; sourceTree = "<group>"; };
+		DB75658E1C119FCB0033CA9D /* cricket_main_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cricket_main_icon.png; sourceTree = "<group>"; };
+		DB7565901C11AB970033CA9D /* Cricket  Quiz app.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cricket  Quiz app.sqlite"; sourceTree = "<group>"; };
+		DB7565921C11B93B0033CA9D /* cricket_main_play_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cricket_main_play_btn.png; sourceTree = "<group>"; };
+		DBAF1EE81C08770C006BC042 /* ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ring.mp3; sourceTree = "<group>"; };
+		DBAF1EEA1C087AA7006BC042 /* football_main_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_main_icon.png; sourceTree = "<group>"; };
+		DBAF1EEC1C087AEB006BC042 /* football_main_play_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_main_play_btn.png; sourceTree = "<group>"; };
+		DBAF1EEE1C0881C2006BC042 /* football_lock_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_lock_icon.png; sourceTree = "<group>"; };
+		DBAF1EF01C0881CC006BC042 /* football_unlock_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_unlock_icon.png; sourceTree = "<group>"; };
+		DBD765381C0D6BC700F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Condensed Light.otf"; sourceTree = "<group>"; };
+		DBD7653A1C0D6C2500F2BEA0 /* Mark Simonson - Proxima Nova Alt Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Light.otf"; sourceTree = "<group>"; };
+		DBD7653C1C0D6CA800F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Condensed Bold.otf"; sourceTree = "<group>"; };
+		DBDD5CDF1C1002FF008A1687 /* start_ipnone6plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = start_ipnone6plus.xib; sourceTree = "<group>"; };
+		DBE35A7C1C1ADB7600717248 /* start_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = start_ipad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD65ABC41BA969DC006A579E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E6546C1C23BF930074007F /* libsqlite3.0.dylib in Frameworks */,
+				28E6546D1C23BF930074007F /* libsqlite3.dylib in Frameworks */,
+				AD7C5C551BB56C11004387DC /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD65ABBE1BA969DC006A579E = {
+			isa = PBXGroup;
+			children = (
+				28E6546A1C23BF930074007F /* libsqlite3.0.dylib */,
+				28E6546B1C23BF930074007F /* libsqlite3.dylib */,
+				ADC51ED21BF06FD500269853 /* ImagesIcon */,
+				AD7C5C541BB56C11004387DC /* AVFoundation.framework */,
+				AD65ABC91BA969DC006A579E /* Final Quiz App */,
+				AD65ABE31BA969DD006A579E /* Final Quiz AppTests */,
+				AD65ABC81BA969DC006A579E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD65ABC81BA969DC006A579E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD65ABC71BA969DC006A579E /* Cricket Quizi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD65ABC91BA969DC006A579E /* Final Quiz App */ = {
+			isa = PBXGroup;
+			children = (
+				ADE09F5A1BB40E7E0048B961 /* AppDelegate */,
+				ADD93CBC1BC3AC9E00750FE7 /* CircularProgress */,
+				ADE8B6C41BC237B000A40BA6 /* HighScore */,
+				AD7C5C4E1BB521AE004387DC /* ViewController */,
+				AD7C5C4F1BB521D6004387DC /* Play */,
+				AD7C5C501BB521F6004387DC /* StartQuiz */,
+				AD7C5C531BB5226B004387DC /* CustomCell */,
+				AD7C5C511BB52217004387DC /* Level1 */,
+				ADE09F5D1BB40F4D0048B961 /* Settings */,
+				ADE09F5C1BB40F360048B961 /* About */,
+				AD7C5C521BB52239004387DC /* Images */,
+				AD65ABD71BA969DD006A579E /* Images.xcassets */,
+				AD65ABD91BA969DD006A579E /* LaunchScreen.xib */,
+				AD65ABCA1BA969DC006A579E /* Supporting Files */,
+			);
+			path = "Final Quiz App";
+			sourceTree = "<group>";
+		};
+		AD65ABCA1BA969DC006A579E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD65ABCB1BA969DC006A579E /* Info.plist */,
+				AD65ABCC1BA969DD006A579E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD65ABE31BA969DD006A579E /* Final Quiz AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD65ABE61BA969DD006A579E /* Final_Quiz_AppTests.m */,
+				AD65ABE41BA969DD006A579E /* Supporting Files */,
+			);
+			path = "Final Quiz AppTests";
+			sourceTree = "<group>";
+		};
+		AD65ABE41BA969DD006A579E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD65ABE51BA969DD006A579E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD7C5C4E1BB521AE004387DC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD65ABD11BA969DD006A579E /* ViewController.h */,
+				AD65ABD21BA969DD006A579E /* ViewController.m */,
+				AD65ABD41BA969DD006A579E /* Main.storyboard */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AD7C5C4F1BB521D6004387DC /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				AD65ABF01BA96C52006A579E /* Play.h */,
+				AD65ABF11BA96C52006A579E /* Play.m */,
+				AD65ABF21BA96C52006A579E /* Play.xib */,
+			);
+			name = Play;
+			sourceTree = "<group>";
+		};
+		AD7C5C501BB521F6004387DC /* StartQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD71431BB2CEEF0007CDBE /* StartQuiz.h */,
+				ADDD71441BB2CEEF0007CDBE /* StartQuiz.m */,
+				ADDD71451BB2CEEF0007CDBE /* StartQuiz.xib */,
+				DB4E262F1C0F1F9600ECA3C9 /* start_iphone5s.xib */,
+				DB4E26311C0F218D00ECA3C9 /* start_iphone6.xib */,
+				DBDD5CDF1C1002FF008A1687 /* start_ipnone6plus.xib */,
+				DBE35A7C1C1ADB7600717248 /* start_ipad.xib */,
+			);
+			name = StartQuiz;
+			sourceTree = "<group>";
+		};
+		AD7C5C511BB52217004387DC /* Level1 */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD71401BB2CBBF0007CDBE /* Level1.h */,
+				ADDD71411BB2CBBF0007CDBE /* Level1.m */,
+				DB7565901C11AB970033CA9D /* Cricket  Quiz app.sqlite */,
+			);
+			name = Level1;
+			sourceTree = "<group>";
+		};
+		AD7C5C521BB52239004387DC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ADE969801BC8D1E700149E49 /* settttt.jpg */,
+				ADE969CC1BC95D5800149E49 /* mjaPVtY.jpg */,
+				ADE9697C1BC8CB5100149E49 /* mtaVFni.jpg */,
+				ADDA5FD71BF1B6AA00D9606C /* plc.png */,
+				ADDA5FDB1BF1B6CB00D9606C /* set.png */,
+				ADDA5FD91BF1B6B800D9606C /* abt.png */,
+				ADE9697E1BC8CCDD00149E49 /* 2dyXkPj.jpg */,
+				ADE9697A1BC8C90B00149E49 /* Curve_2 (1).jpg */,
+				AD7C5C4A1BB515A6004387DC /* launchImage.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AD7C5C531BB5226B004387DC /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				ADB7650E1BAFCEC9000019AC /* CustomCell.h */,
+				ADB7650F1BAFCEC9000019AC /* CustomCell.m */,
+				ADB765101BAFCEC9000019AC /* CustomCell.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		ADC51ED21BF06FD500269853 /* ImagesIcon */ = {
+			isa = PBXGroup;
+			children = (
+				DBD765381C0D6BC700F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Light.otf */,
+				DBD7653A1C0D6C2500F2BEA0 /* Mark Simonson - Proxima Nova Alt Light.otf */,
+				DBD7653C1C0D6CA800F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Bold.otf */,
+				ADDA5FCB1BF19E6300D9606C /* 02 About Us  Sample.png */,
+				ADE60C691BF9FE8900482127 /* main_quizi.png */,
+				ADDA5FCD1BF19E7500D9606C /* back_arrow_icon_black.png */,
+				ADE60C6B1BFA040C00482127 /* Score Sample.png */,
+				ADE60C6C1BFA040C00482127 /* score_done_btn.png */,
+				ADE60C6D1BFA040C00482127 /* score_fail_icon.png */,
+				ADE60C6E1BFA040C00482127 /* score_pass_icon.png */,
+				ADE60C6F1BFA040C00482127 /* score_share_fb.png */,
+				ADDA5FCF1BF19E7C00D9606C /* about_us_main.png */,
+				ADC51EDD1BF0748400269853 /* Quiz App Categ Sample.png */,
+				ADC51EDF1BF0749200269853 /* arrow_icon.png */,
+				ADDA5FD31BF19ED200D9606C /* level_hint_text_field.png */,
+				ADC51EE01BF0749200269853 /* back_arrow_icon.png */,
+				ADC51EE21BF0749200269853 /* rest_icon.png */,
+				ADC51EE31BF0749200269853 /* tag_text.png */,
+				ADDA5FD11BF19ECD00D9606C /* level_hint_number.png */,
+				DBAF1EEA1C087AA7006BC042 /* football_main_icon.png */,
+				DBAF1EEC1C087AEB006BC042 /* football_main_play_btn.png */,
+				DBAF1EEE1C0881C2006BC042 /* football_lock_icon.png */,
+				DBAF1EF01C0881CC006BC042 /* football_unlock_icon.png */,
+				9DE7766B1C0C857800001FC2 /* Leelawadee Bold.ttf */,
+				9DE7766D1C0C863B00001FC2 /* leelawad.ttf */,
+				DB75658E1C119FCB0033CA9D /* cricket_main_icon.png */,
+				DB7565921C11B93B0033CA9D /* cricket_main_play_btn.png */,
+			);
+			name = ImagesIcon;
+			sourceTree = "<group>";
+		};
+		ADD93CBC1BC3AC9E00750FE7 /* CircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				ADE969841BC8E5C200149E49 /* CircleProgressBar.h */,
+				ADE969851BC8E5C200149E49 /* CircleProgressBar.m */,
+			);
+			name = CircularProgress;
+			sourceTree = "<group>";
+		};
+		ADE09F5A1BB40E7E0048B961 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AD65ABCE1BA969DD006A579E /* AppDelegate.h */,
+				AD65ABCF1BA969DD006A579E /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		ADE09F5C1BB40F360048B961 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				AD65ABFF1BA96CA8006A579E /* About.h */,
+				AD65AC001BA96CA8006A579E /* About.m */,
+				AD65AC011BA96CA8006A579E /* About.xib */,
+				ADE969871BC8E71B00149E49 /* ring */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		ADE09F5D1BB40F4D0048B961 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AD65ABF51BA96C7E006A579E /* Settings.h */,
+				AD65ABF61BA96C7E006A579E /* Settings.m */,
+				AD65ABF71BA96C7E006A579E /* Settings.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		ADE8B6C41BC237B000A40BA6 /* HighScore */ = {
+			isa = PBXGroup;
+			children = (
+				ADDFF67D1BB91F3F00400FA6 /* HighScore.h */,
+				ADDFF67E1BB91F3F00400FA6 /* HighScore.m */,
+				ADDFF67F1BB91F3F00400FA6 /* HighScore.xib */,
+			);
+			name = HighScore;
+			sourceTree = "<group>";
+		};
+		ADE969871BC8E71B00149E49 /* ring */ = {
+			isa = PBXGroup;
+			children = (
+				DBAF1EE81C08770C006BC042 /* ring.mp3 */,
+			);
+			path = ring;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD65ABC61BA969DC006A579E /* Final Quiz App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD65ABEA1BA969DD006A579E /* Build configuration list for PBXNativeTarget "Final Quiz App" */;
+			buildPhases = (
+				AD65ABC31BA969DC006A579E /* Sources */,
+				AD65ABC41BA969DC006A579E /* Frameworks */,
+				AD65ABC51BA969DC006A579E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Final Quiz App";
+			productName = "Final Quiz App";
+			productReference = AD65ABC71BA969DC006A579E /* Cricket Quizi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD65ABBF1BA969DC006A579E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = abc;
+				TargetAttributes = {
+					AD65ABC61BA969DC006A579E = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = FYDZRDCX2E;
+					};
+				};
+			};
+			buildConfigurationList = AD65ABC21BA969DC006A579E /* Build configuration list for PBXProject "Final Quiz App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD65ABBE1BA969DC006A579E;
+			productRefGroup = AD65ABC81BA969DC006A579E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD65ABC61BA969DC006A579E /* Final Quiz App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD65ABC51BA969DC006A579E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD65ABD61BA969DD006A579E /* Main.storyboard in Resources */,
+				ADE9697D1BC8CB5100149E49 /* mtaVFni.jpg in Resources */,
+				AD65ABDB1BA969DD006A579E /* LaunchScreen.xib in Resources */,
+				ADDA5FD81BF1B6AA00D9606C /* plc.png in Resources */,
+				ADE969CD1BC95D5800149E49 /* mjaPVtY.jpg in Resources */,
+				AD7C5C4B1BB515A6004387DC /* launchImage.jpg in Resources */,
+				ADDA5FDC1BF1B6CB00D9606C /* set.png in Resources */,
+				ADDA5FCE1BF19E7500D9606C /* back_arrow_icon_black.png in Resources */,
+				DBAF1EEF1C0881C2006BC042 /* football_lock_icon.png in Resources */,
+				DBD765391C0D6BC700F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Light.otf in Resources */,
+				ADE9697F1BC8CCDD00149E49 /* 2dyXkPj.jpg in Resources */,
+				ADC51EE41BF0749200269853 /* arrow_icon.png in Resources */,
+				ADB765121BAFCEC9000019AC /* CustomCell.xib in Resources */,
+				ADDFF6811BB91F3F00400FA6 /* HighScore.xib in Resources */,
+				9DE7766E1C0C863B00001FC2 /* leelawad.ttf in Resources */,
+				DBAF1EED1C087AEB006BC042 /* football_main_play_btn.png in Resources */,
+				ADC51EE71BF0749200269853 /* rest_icon.png in Resources */,
+				ADE60C731BFA040C00482127 /* score_pass_icon.png in Resources */,
+				DBAF1EEB1C087AA7006BC042 /* football_main_icon.png in Resources */,
+				DBAF1EF11C0881CC006BC042 /* football_unlock_icon.png in Resources */,
+				DB75658F1C119FCB0033CA9D /* cricket_main_icon.png in Resources */,
+				ADE9697B1BC8C90B00149E49 /* Curve_2 (1).jpg in Resources */,
+				ADE969811BC8D1E700149E49 /* settttt.jpg in Resources */,
+				ADDD71471BB2CEEF0007CDBE /* StartQuiz.xib in Resources */,
+				DB4E26321C0F218D00ECA3C9 /* start_iphone6.xib in Resources */,
+				AD65ABD81BA969DD006A579E /* Images.xcassets in Resources */,
+				ADC51EDE1BF0748400269853 /* Quiz App Categ Sample.png in Resources */,
+				ADDA5FD21BF19ECD00D9606C /* level_hint_number.png in Resources */,
+				ADDA5FCC1BF19E6300D9606C /* 02 About Us  Sample.png in Resources */,
+				DBE35A7D1C1ADB7600717248 /* start_ipad.xib in Resources */,
+				DB7565911C11AB970033CA9D /* Cricket  Quiz app.sqlite in Resources */,
+				ADE60C701BFA040C00482127 /* Score Sample.png in Resources */,
+				AD65ABF41BA96C52006A579E /* Play.xib in Resources */,
+				ADE60C6A1BF9FE8A00482127 /* main_quizi.png in Resources */,
+				DB4E26301C0F1F9600ECA3C9 /* start_iphone5s.xib in Resources */,
+				ADDA5FD41BF19ED200D9606C /* level_hint_text_field.png in Resources */,
+				DB7565931C11B93B0033CA9D /* cricket_main_play_btn.png in Resources */,
+				ADDA5FDA1BF1B6B800D9606C /* abt.png in Resources */,
+				ADE60C711BFA040C00482127 /* score_done_btn.png in Resources */,
+				ADE60C721BFA040C00482127 /* score_fail_icon.png in Resources */,
+				ADDA5FD01BF19E7C00D9606C /* about_us_main.png in Resources */,
+				9DE7766C1C0C857800001FC2 /* Leelawadee Bold.ttf in Resources */,
+				ADC51EE51BF0749200269853 /* back_arrow_icon.png in Resources */,
+				ADE60C741BFA040C00482127 /* score_share_fb.png in Resources */,
+				AD65ABF91BA96C7E006A579E /* Settings.xib in Resources */,
+				DBD7653D1C0D6CA800F2BEA0 /* Mark Simonson - Proxima Nova Alt Condensed Bold.otf in Resources */,
+				AD65AC031BA96CA8006A579E /* About.xib in Resources */,
+				DBD7653B1C0D6C2500F2BEA0 /* Mark Simonson - Proxima Nova Alt Light.otf in Resources */,
+				DBAF1EE91C08770C006BC042 /* ring.mp3 in Resources */,
+				ADC51EE81BF0749200269853 /* tag_text.png in Resources */,
+				DBDD5CE01C1002FF008A1687 /* start_ipnone6plus.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD65ABC31BA969DC006A579E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADDFF6801BB91F3F00400FA6 /* HighScore.m in Sources */,
+				AD65AC021BA96CA8006A579E /* About.m in Sources */,
+				ADDD71421BB2CBBF0007CDBE /* Level1.m in Sources */,
+				ADE969861BC8E5C200149E49 /* CircleProgressBar.m in Sources */,
+				ADDD71461BB2CEEF0007CDBE /* StartQuiz.m in Sources */,
+				ADB765111BAFCEC9000019AC /* CustomCell.m in Sources */,
+				AD65ABD31BA969DD006A579E /* ViewController.m in Sources */,
+				AD65ABD01BA969DD006A579E /* AppDelegate.m in Sources */,
+				AD65ABF81BA96C7E006A579E /* Settings.m in Sources */,
+				AD65ABCD1BA969DD006A579E /* main.m in Sources */,
+				AD65ABF31BA96C52006A579E /* Play.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD65ABD41BA969DD006A579E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD65ABD51BA969DD006A579E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD65ABD91BA969DD006A579E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD65ABDA1BA969DD006A579E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD65ABE81BA969DD006A579E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Udit Handa (FYDZRDCX2E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Udit Handa (FYDZRDCX2E)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Cricket Quizi";
+				PROVISIONING_PROFILE = "8d61a078-848e-45b2-a826-c34d02e73b55";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD65ABE91BA969DD006A579E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Udit Handa (FYDZRDCX2E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Udit Handa (FYDZRDCX2E)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "Cricket Quizi";
+				PROVISIONING_PROFILE = "8d61a078-848e-45b2-a826-c34d02e73b55";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD65ABEB1BA969DD006A579E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Udit Handa (FYDZRDCX2E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Udit Handa (FYDZRDCX2E)";
+				INFOPLIST_FILE = "Final Quiz App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Cricket Quizi";
+				PROVISIONING_PROFILE = "8d61a078-848e-45b2-a826-c34d02e73b55";
+			};
+			name = Debug;
+		};
+		AD65ABEC1BA969DD006A579E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Udit Handa (FYDZRDCX2E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Udit Handa (FYDZRDCX2E)";
+				INFOPLIST_FILE = "Final Quiz App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Cricket Quizi";
+				PROVISIONING_PROFILE = "8d61a078-848e-45b2-a826-c34d02e73b55";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD65ABC21BA969DC006A579E /* Build configuration list for PBXProject "Final Quiz App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD65ABE81BA969DD006A579E /* Debug */,
+				AD65ABE91BA969DD006A579E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD65ABEA1BA969DD006A579E /* Build configuration list for PBXNativeTarget "Final Quiz App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD65ABEB1BA969DD006A579E /* Debug */,
+				AD65ABEC1BA969DD006A579E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD65ABBF1BA969DC006A579E /* Project object */;
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wDX-fE-5Lc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Mark Simonson - Proxima Nova Alt Light.otf">
+            <string>ProximaNovaA-Light</string>
+            <string>ProximaNovaA-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qJL-Nt-FEN">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="wDX-fE-5Lc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1M3-n5-bdX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u9X-dJ-YGu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPw-tB-BWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-769" y="439"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xo-sD-kwe">
+                                <rect key="frame" x="128" y="513" width="340" height="65"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaA-Light" family="Proxima Nova Alt" pointSize="20"/>
+                                <state key="normal" title="SETTINGS">
+                                    <color key="titleColor" red="0.36862745099999999" green="0.66274509800000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wT-Ie-zsO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc6-V5-m6F">
+                                <rect key="frame" x="128" y="353" width="340" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tc6-V5-m6F" secondAttribute="height" multiplier="221:42" constant="3.2380952380952408" id="wEv-eu-1AT"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="cricket_main_play_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynH-ub-Ucu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play Together" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8q-7a-H2o">
+                                <rect key="frame" x="171" y="41" width="278" height="19"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <color key="textColor" red="0.22745098039215686" green="0.22745098039215686" blue="0.22816051136363635" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="28"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKY-dS-Qgz">
+                                <rect key="frame" x="128" y="444" width="340" height="65"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaA-Light" family="Proxima Nova Alt" pointSize="20"/>
+                                <state key="normal" title="ABOUT US">
+                                    <color key="titleColor" red="0.36862745098039218" green="0.66274509803921566" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAbout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVx-gG-FSN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cricket_main_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="kuK-NA-hSr">
+                                <rect key="frame" x="124" y="120" width="354" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kuK-NA-hSr" secondAttribute="height" multiplier="442:189" constant="-88" id="tiE-o0-GCr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRICKET QUIZI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xJ-jQ-B9L">
+                                <rect key="frame" x="171" y="53" width="408" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="408" id="4jW-Wf-Y7h"/>
+                                    <constraint firstAttribute="width" secondItem="4xJ-jQ-B9L" secondAttribute="height" multiplier="278:39" constant="-12.564102564102598" id="iUN-wQ-rBf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="31"/>
+                                <color key="textColor" red="0.22745098039215686" green="0.22745098039215686" blue="0.22862215909090908" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="52"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.90588235294117647" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4xJ-jQ-B9L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="03V-XD-8Z1">
+                                <variation key="heightClass=regular-widthClass=regular" constant="103"/>
+                            </constraint>
+                            <constraint firstAttribute="width" secondItem="tc6-V5-m6F" secondAttribute="height" multiplier="65:7" constant="5.7142857142856656" id="0ug-ZE-AZ8"/>
+                            <constraint firstItem="4xJ-jQ-B9L" firstAttribute="width" secondItem="Z8q-7a-H2o" secondAttribute="width" constant="130" id="2yA-oC-MP4"/>
+                            <constraint firstAttribute="centerY" secondItem="tc6-V5-m6F" secondAttribute="centerY" constant="-85" id="5uc-29-6cE">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-216"/>
+                            </constraint>
+                            <constraint firstItem="kuK-NA-hSr" firstAttribute="top" secondItem="4xJ-jQ-B9L" secondAttribute="bottom" constant="8" id="6jn-FO-mp5">
+                                <variation key="heightClass=regular-widthClass=regular" constant="109"/>
+                            </constraint>
+                            <constraint firstItem="9Xo-sD-kwe" firstAttribute="top" secondItem="bKY-dS-Qgz" secondAttribute="bottom" constant="4" id="NDb-v8-pZz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="kuK-NA-hSr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="221:300" constant="-88" id="TA2-yY-OWE"/>
+                            <constraint firstItem="bKY-dS-Qgz" firstAttribute="height" secondItem="tc6-V5-m6F" secondAttribute="height" constant="1" id="bgq-an-GhE"/>
+                            <constraint firstItem="bKY-dS-Qgz" firstAttribute="width" secondItem="9Xo-sD-kwe" secondAttribute="width" id="dhl-V2-CiV"/>
+                            <constraint firstAttribute="centerX" secondItem="kuK-NA-hSr" secondAttribute="centerX" constant="-1" id="eMO-Cm-gt4"/>
+                            <constraint firstItem="4xJ-jQ-B9L" firstAttribute="centerX" secondItem="Z8q-7a-H2o" secondAttribute="centerX" constant="64.5" id="eTr-rJ-kuO"/>
+                            <constraint firstItem="bKY-dS-Qgz" firstAttribute="centerX" secondItem="9Xo-sD-kwe" secondAttribute="centerX" id="eds-Gf-uQK"/>
+                            <constraint firstItem="bKY-dS-Qgz" firstAttribute="top" secondItem="tc6-V5-m6F" secondAttribute="bottom" constant="27" id="feo-EJ-hw4"/>
+                            <constraint firstItem="4xJ-jQ-B9L" firstAttribute="top" secondItem="Z8q-7a-H2o" secondAttribute="bottom" constant="-7" id="i04-t4-RZk"/>
+                            <constraint firstAttribute="centerX" secondItem="tc6-V5-m6F" secondAttribute="centerX" constant="2" id="lZb-hY-rIK"/>
+                            <constraint firstAttribute="centerX" secondItem="4xJ-jQ-B9L" secondAttribute="centerX" constant="-74.5" id="sc6-fb-2vj">
+                                <variation key="heightClass=regular-widthClass=regular" constant="75.5"/>
+                            </constraint>
+                            <constraint firstItem="bKY-dS-Qgz" firstAttribute="width" secondItem="tc6-V5-m6F" secondAttribute="width" id="xAD-Wc-oAm"/>
+                            <constraint firstItem="bKY-dS-Qgz" firstAttribute="height" secondItem="9Xo-sD-kwe" secondAttribute="height" id="xcR-Lz-DRm"/>
+                            <constraint firstItem="bKY-dS-Qgz" firstAttribute="centerX" secondItem="tc6-V5-m6F" secondAttribute="centerX" id="ymi-GC-USu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yfi-4t-ql7"/>
+                    <connections>
+                        <outlet property="btn_aboutoutlet" destination="bKY-dS-Qgz" id="vU3-s9-IxA"/>
+                        <outlet property="btn_setting_outlet" destination="9Xo-sD-kwe" id="kEf-Pw-Cl4"/>
+                        <outlet property="lbl_cricketQuiz" destination="4xJ-jQ-B9L" id="f0T-Dj-XB8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434" y="343"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cricket_main_icon.png" width="460" height="292"/>
+        <image name="cricket_main_play_btn.png" width="460" height="92"/>
+    </resources>
+</document>

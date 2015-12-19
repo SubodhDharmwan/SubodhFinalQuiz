@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="About">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_us_main.png" translatesAutoresizingMaskIntoConstraints="NO" id="EW4-6h-dW3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XE1-0M-Va4">
+                    <rect key="frame" x="177" y="304" width="120" height="30"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnCynoteckURL:" destination="-1" eventType="touchUpInside" id="Jpe-mI-7DT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQD-ub-vt1">
+                    <rect key="frame" x="1" y="0.0" width="60" height="64"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBackTapped:" destination="-1" eventType="touchUpInside" id="APO-TN-s63"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_arrow_icon_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zhx-6G-EZa">
+                    <rect key="frame" x="19" y="41" width="24" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Zhx-6G-EZa" secondAttribute="height" multiplier="12:11" id="Grh-J1-nr3"/>
+                        <constraint firstAttribute="width" constant="24" id="e0a-rY-sK9"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.87058823529411766" green="0.90559440559440563" blue="0.93831949300699302" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="EW4-6h-dW3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7s0-6z-M1Y"/>
+                <constraint firstAttribute="bottom" secondItem="EW4-6h-dW3" secondAttribute="bottom" id="BAf-2B-NXT"/>
+                <constraint firstItem="Zhx-6G-EZa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="41" id="bKU-Uz-phF"/>
+                <constraint firstItem="Zhx-6G-EZa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="iPW-CM-BmH"/>
+                <constraint firstAttribute="trailing" secondItem="EW4-6h-dW3" secondAttribute="trailing" id="pGv-HT-in5"/>
+                <constraint firstItem="EW4-6h-dW3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vJg-Vi-nAf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="338" y="335"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_us_main.png" width="640" height="1136"/>
+        <image name="back_arrow_icon_black.png" width="47" height="44"/>
+    </resources>
+</document>
